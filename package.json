@@ -1,0 +1,18 @@
+{
+  "name": "dbug",
+  "version": "1.0.0",
+  "description": "A simple debug",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Mike Wi2 <contact@wi2prod.fr> (http://createur-site.pro/)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^5.2.0"
+  },
+  "dependencies": {
+    "ms": "^0.7.0"
+  }
+}
