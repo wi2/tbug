@@ -1,7 +1,7 @@
 {
-  "name": "dbug",
+  "name": "tbug",
   "version": "1.0.0",
-  "description": "A simple debug",
+  "description": "A simple trace debug",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js"
@@ -14,5 +14,9 @@
   },
   "dependencies": {
     "ms": "^0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wi2/tbug.git"
   }
 }

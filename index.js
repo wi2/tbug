@@ -16,7 +16,7 @@ var errorTrace = function(){
     return null;
 }
 
-var debug = function(what, opt) {
+var tbug = function(what, opt) {
 
   var options = opt||{ showHidden: false, depth: null, colors: true }
     , context = typeof what === 'string' ? [what] : what;
@@ -33,11 +33,11 @@ var debug = function(what, opt) {
   process.on('SIGINT', function () { process.exit(0); });
 
   var check = function () {
-    if ( process.env.dbug) {
-      if (process.env.dbug === '*' || context.indexOf(process.env.dbug) > -1)
+    if ( process.env.tbug) {
+      if (process.env.tbug === '*' || context.indexOf(process.env.tbug) > -1)
         return true;
-      else if ( process.env.dbug.indexOf('|') > -1) {
-        var dbg = process.env.dbug.split("|");
+      else if ( process.env.tbug.indexOf('|') > -1) {
+        var dbg = process.env.tbug.split("|");
         for (var i=0,len=dbg.length; i<len; i++)
           if (context.indexOf(dbg[i]) > -1) return true
       }
@@ -65,4 +65,4 @@ var debug = function(what, opt) {
 
 }
 
-module.exports = debug;
+module.exports = tbug;
